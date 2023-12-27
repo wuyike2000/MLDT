@@ -64,3 +64,4 @@ Go to ```MLDT/MLDT/task-planning/```. Run ```bash scripts/llm_eval.sh``` to eval
 - api: API key for ChatGPT
 - demo: add this to use demonstrations
 - max_retry: the number of times that task planning models can try, we set 1 in our experiment, you can set larger for higher sucess rate but longer inference time, it is useful for generating more training corpus
+### Lora Checkpoint
