@@ -22,5 +22,10 @@ MLDT/
 ```
 
 ## Dataset
-We conduct experiments in VirtualHome on four datasets.
-The environment can be 
+We evaluate our method on four datasets, three from [LID](https://github.com/ShuangLI59/Pre-Trained-Language-Models-for-Interactive-Decision-Making) and one created by ourselves. Download the four datasets from [here]() and unzip it to ```MLDT/MLDT/data/test_init_env```
+```
+MLDT/
+└── MLDT/
+    ├── data/                  
+        ├── test_init_env/                                        
+```                                                     
