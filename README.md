@@ -29,7 +29,11 @@ MLDT/
     ├── data/                  
         ├── test_init_env/                                        
 ```                                                     
-You can also run ```MLDT/MLDT/data/create_long.py``` to create the LongTasks dataset. We remove some samples due to the environment bug from LID.
+You can run ```MLDT/MLDT/data/create_long.py``` to create the LongTasks dataset. We remove some samples due to the environment bug from LID.
 
 ## Goal-sensitive Corpus Generation
 We provide all the instruction datasets for different methods in ```MLDT/Instruction-Tuning```: "multi-layer" for "MLDT", "react" for "ReAct", "embodied" for "Embodied", "task-action" for "MLDT<sub>-goal</sub>", "goal-action" for "MLDT<sub>-task</sub>".
+You can go to ```MLDT/MLDT/task-planning/``` directory and run ```bash scripts/llm_collection.sh``` to generate the training corpus for "MLDT". You can judge the parameters like "subset", "max_retry" to generate your own data. For other methods, you can either modify the python scripts to generate from scratch or use some tricks like regular expressions to obtain based on the generated corpus.
+
+## Instruction Tuning
+Run the 
