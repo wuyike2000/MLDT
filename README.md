@@ -20,6 +20,8 @@ MLDT/
 └── MLDT/
     ├── virtualhome/                                                          
 ```
+### LLM Setup
+We employ various LLMs of different scales as the backbone, including 
 
 ## Dataset
 We evaluate our method on four datasets, three (In-Distribution, NovelScenes, NovelTasks) from [LID](https://github.com/ShuangLI59/Pre-Trained-Language-Models-for-Interactive-Decision-Making) and one (LongTasks) created by ourselves. Download the four datasets from [here](https://1drv.ms/u/s!AvfJPiUjTsi_aYQaFwohMS7NA2s?e=tZkalm) and unzip it to ```MLDT/MLDT/data/test_init_env```
