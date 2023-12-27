@@ -51,10 +51,13 @@ We provide all the instruction datasets for different methods in ```MLDT/Instruc
 You can go to ```MLDT/MLDT/task-planning/``` and run ```bash scripts/llm_collection.sh``` to generate the training corpus for "MLDT". You can modify the parameters like "subset", "max_retry" to generate your own data. For other methods, you can either modify the python scripts to generate training corpus from scratch or use some tricks like regular expressions to obtain the training corpus based on the generated corpus.
 
 ## Instruction Tuning
+### Usage
 Go to ```MLDT/Instruction-Tuning/```. Run ```run_bloom-3b.sh``` or ```run_bloom-7b.sh``` for fine-tuning bloom. Run ```run_chatglm.sh``` for fine-tuning ChatGLM3-6B or ChatGLM3-6B-32K. Run ```run_llama-7b.sh``` or ```run_llama-13b.sh``` for fine-tuning Llama-2-chat or LongAlpaca. You can modify the parameters like "dataset", "train_batch_size", "accumulation_steps" to fit your own training.
+### Lora Checkpoint
+We provide our lora checkpoint for each method: [MLDT](https://1drv.ms/u/s!An61WTKu2fOOa6lOfBDVmFP2Quo?e=O0N5l7), [Embodied](https://1drv.ms/u/s!AvfJPiUjTsi_an6vmzEdlH5LaVs?e=0KYZN0), [ReAct](https://1drv.ms/u/s!Am9fgKqXV2C2ayrt9rQVOFg1044?e=9SLo5M), [MLDT<sub>-goal</sub>](https://1drv.ms/u/s!An61WTKu2fOObDIxmBz1LpeD6U4?e=hRa8G5), ["MLDT<sub>-task</sub>"](https://1drv.ms/u/s!AvfJPiUjTsi_a6idWguHNSppN9k?e=Tj43MW). You can skip instruction tuning and use these checkpoints directly.
 
 ## Multi-Level Decomposition for Robotic Task Planning
-### Command
+### Usage
 Go to ```MLDT/MLDT/task-planning/```. Run ```bash scripts/llm_eval.sh``` to evaluate open-source LLMs for "MLDT", "Embodied", "ReAct", "MLDT<sub>-goal</sub>", and "MLDT<sub>-task</sub>". Run ```bash scripts/llm_eval_demo.sh``` to evaluate open-source LLMs for "MLDT<sub>-ft</sub>". Run ```bash scripts/gpt_eval.sh``` to evaluate closed-source LLMs for "MLDT", "Embodied", "ReAct".
 ### Key Parameters
 - base_port: port number for VirtualHome environment
@@ -64,4 +67,3 @@ Go to ```MLDT/MLDT/task-planning/```. Run ```bash scripts/llm_eval.sh``` to eval
 - api: API key for ChatGPT
 - demo: add this to use demonstrations
 - max_retry: the number of times that task planning models can try, we set 1 in our experiment, you can set larger for higher sucess rate but longer inference time, it is useful for generating more training corpus
-### Lora Checkpoint
