@@ -21,8 +21,7 @@ MLDT/
     └── virtualhome/                                                          
 ```
 ### LLM Setup
-We employ various LLMs of different scales as the backbone, including Llama-2-chat([7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf)), bloom([3B](https://huggingface.co/bigscience/bloom-3b), [7B](https://huggingface.co/bigscience/bloom-7b1)), [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b). To examine the effectiveness of our method on long-context LLMs, we use LongAlpaca ([7B](https://huggingface.co/Yukang/LongAlpaca-7B), [13B](https://huggingface.co/Yukang/LongAlpaca-13B)), [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k), the long-context
-versions of Llama-2-chat and ChatGLM, respectively. Download LLMs to ```MLDT/pretrain/```.
+We employ various LLMs of different scales as the backbone, including Llama-2-chat ([7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf)), bloom ([3B](https://huggingface.co/bigscience/bloom-3b), [7B](https://huggingface.co/bigscience/bloom-7b1)), [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b). To examine the effectiveness of our method on long-context LLMs, we use LongAlpaca ([7B](https://huggingface.co/Yukang/LongAlpaca-7B), [13B](https://huggingface.co/Yukang/LongAlpaca-13B)), [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k), the long-context versions of Llama-2-chat and ChatGLM, respectively. Download LLMs to ```MLDT/pretrain/```.
 ```
 MLDT/
 └── pretrain/
@@ -54,7 +53,7 @@ You can go to ```MLDT/MLDT/task-planning/``` and run ```bash scripts/llm_collect
 ### Usage
 Go to ```MLDT/Instruction-Tuning/```. Run ```run_bloom-3b.sh``` or ```run_bloom-7b.sh``` for fine-tuning bloom. Run ```run_chatglm.sh``` for fine-tuning ChatGLM3-6B or ChatGLM3-6B-32K. Run ```run_llama-7b.sh``` or ```run_llama-13b.sh``` for fine-tuning Llama-2-chat or LongAlpaca. You can modify the parameters like "dataset", "train_batch_size", "accumulation_steps" to fit your own training.
 ### Lora Checkpoint
-We provide our lora checkpoint for each method: [MLDT](https://1drv.ms/u/s!An61WTKu2fOOa6lOfBDVmFP2Quo?e=O0N5l7), [Embodied](https://1drv.ms/u/s!AvfJPiUjTsi_an6vmzEdlH5LaVs?e=0KYZN0), [ReAct](https://1drv.ms/u/s!Am9fgKqXV2C2ayrt9rQVOFg1044?e=9SLo5M), [MLDT<sub>-goal</sub>](https://1drv.ms/u/s!An61WTKu2fOObDIxmBz1LpeD6U4?e=hRa8G5), ["MLDT<sub>-task</sub>"](https://1drv.ms/u/s!AvfJPiUjTsi_a6idWguHNSppN9k?e=Tj43MW). You can skip instruction tuning and use these checkpoints directly.
+We provide our lora checkpoint for each method: [MLDT](https://1drv.ms/u/s!An61WTKu2fOOa6lOfBDVmFP2Quo?e=O0N5l7), [Embodied](https://1drv.ms/u/s!AvfJPiUjTsi_an6vmzEdlH5LaVs?e=0KYZN0), [ReAct](https://1drv.ms/u/s!Am9fgKqXV2C2ayrt9rQVOFg1044?e=9SLo5M), [MLDT<sub>-goal</sub>](https://1drv.ms/u/s!An61WTKu2fOObDIxmBz1LpeD6U4?e=hRa8G5), [MLDT<sub>-task</sub>](https://1drv.ms/u/s!AvfJPiUjTsi_a6idWguHNSppN9k?e=Tj43MW). You can skip instruction tuning and use these checkpoints directly.
 
 ## Multi-Level Decomposition for Robotic Task Planning
 ### Usage
