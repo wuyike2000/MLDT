@@ -18,7 +18,7 @@ We conduct experiments in VirtualHome. Download VirtualHome exectuable file (v2.
 ```
 MLDT/
 └── MLDT/
-    ├── virtualhome/                                                          
+    └── virtualhome/                                                          
 ```
 ### LLM Setup
 We employ various LLMs of different scales as the backbone, including Llama-2-chat([7B](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf), [13B](https://huggingface.co/meta-llama/Llama-2-13b-chat-hf)), bloom([3B](https://huggingface.co/bigscience/bloom-3b), [7B](https://huggingface.co/bigscience/bloom-7b1)), [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b). To examine the effectiveness of our method on long-context LLMs, we use LongAlpaca ([7B](https://huggingface.co/Yukang/LongAlpaca-7B), [13B](https://huggingface.co/Yukang/LongAlpaca-13B)), [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k), the long-context
@@ -27,12 +27,12 @@ versions of Llama-2-chat and ChatGLM, respectively. Download LLMs to ```MLDT/pre
 MLDT/
 └── pretrain/
     ├── bloom-3b/
-    └── bloom-7b/
-    └── chatglm3-6b/
-    └── chatglm3-6b-32k/
-    └── llama-2-7b-chat-hf/
-    └── llama-2-13b-chat-hf/
-    └── LongAlpaca-7B/
+    ├── bloom-7b/
+    ├── chatglm3-6b/
+    ├── chatglm3-6b-32k/
+    ├── llama-2-7b-chat-hf/
+    ├── llama-2-13b-chat-hf/
+    ├── LongAlpaca-7B/
     └── LongAlpaca-13B/                         
 ```
 
@@ -42,7 +42,7 @@ We evaluate our method on four datasets, three (In-Distribution, NovelScenes, No
 MLDT/
 └── MLDT/
     ├── data/                  
-        ├── test_init_env/                                        
+        └── test_init_env/                                        
 ```                                                     
 You can run ```MLDT/MLDT/data/create_long.py``` to create the LongTasks dataset. We remove some samples due to the environment bug from LID.
 
