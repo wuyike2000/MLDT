@@ -22,10 +22,14 @@ MLDT/
 ```
 
 ## Dataset
-We evaluate our method on four datasets, three from [LID](https://github.com/ShuangLI59/Pre-Trained-Language-Models-for-Interactive-Decision-Making) and one created by ourselves. Download the four datasets from [here]() and unzip it to ```MLDT/MLDT/data/test_init_env```
+We evaluate our method on four datasets, three (In-Distribution, NovelScenes, NovelTasks) from [LID](https://github.com/ShuangLI59/Pre-Trained-Language-Models-for-Interactive-Decision-Making) and one (LongTasks) created by ourselves. Download the four datasets from [here](https://1drv.ms/u/s!AvfJPiUjTsi_aYQaFwohMS7NA2s?e=tZkalm) and unzip it to ```MLDT/MLDT/data/test_init_env```
 ```
 MLDT/
 └── MLDT/
     ├── data/                  
         ├── test_init_env/                                        
 ```                                                     
+You can also run ```MLDT/MLDT/data/create_long.py``` to create the LongTasks dataset. We remove some samples due to the environment bug from LID.
+
+## Goal-sensitive Corpus Generation
+We provide all the instruction datasets for different methods in ```MLDT/Instruction-Tuning```: "multi-layer" for "MLDT", "react" for "ReAct", "embodied" for "Embodied", "task-action" for "MLDT<sub>-goal</sub>", "goal-action" for "MLDT<sub>-task</sub>".
