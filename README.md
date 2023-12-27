@@ -6,9 +6,21 @@ In the realm of data-driven AI technology, the application of open-source large 
 ![](./figs/1.png)
 This is the accompanying code for the paper "MLDT: Multi-Level Decomposition for Complex Long-Horizon Robotic Task Planning with Open-Source Large Language Model"
 
-## Environment Setup
+## Setup
+### Environment Setup
 ```
 conda create -n MLDT python=3.10
 conda activate MLDT
 pip install -r requirement.txt
 ```
+### VirtualHome Setup
+We conduct experiments in VirtualHome. Download VirtualHome exectuable file (v2.2.5) from [here](https://1drv.ms/u/s!Am9fgKqXV2C2bB8WJWKb4-NABSg?e=8FJOUA) and unzip it to ```MLDT/MLDT/virtualhome``` 
+```
+MLDT/
+└── MLDT/
+    ├── virtualhome/                                                          
+```
+
+## Dataset
+We conduct experiments in VirtualHome on four datasets.
+The environment can be 
