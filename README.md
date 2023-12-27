@@ -5,3 +5,10 @@ In the realm of data-driven AI technology, the application of open-source large 
 > 
 ![](./figs/1.png)
 This is the accompanying code for the paper "MLDT: Multi-Level Decomposition for Complex Long-Horizon Robotic Task Planning with Open-Source Large Language Model"
+
+## Environment Setup
+```
+conda create -n MLDT python=3.10
+conda activate MLDT
+pip install -r requirement.txt
+```
