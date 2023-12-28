@@ -60,8 +60,8 @@ We provide our lora checkpoint for each method: [MLDT](https://1drv.ms/u/s!An61W
 Go to ```MLDT/MLDT/task-planning/```. Run ```bash scripts/llm_eval.sh``` to evaluate open-source LLMs for "MLDT", "Embodied", "ReAct", "MLDT<sub>-goal</sub>", and "MLDT<sub>-task</sub>". Run ```bash scripts/llm_eval_demo.sh``` to evaluate open-source LLMs for "MLDT<sub>-ft</sub>". Run ```bash scripts/gpt_eval.sh``` to evaluate closed-source LLMs for "MLDT", "Embodied", "ReAct".
 ### Key Parameters
 - base_port: port number for VirtualHome environment
-- llm: LLM backbone location
-- lora: lora weight location, "None" for using LLM backbone only or closed-source LLMs
+- llm: the path to LLM backbone
+- lora: the path to lora weight, "None" for using LLM backbone only or closed-source LLMs
 - mode: select task planning method: "multi-layer" for "MLDT", "react" for "ReAct", "embodied" for "Embodied", "goal-action" for "MLDT<sub>-task</sub>", "task-action" for "MLDT<sub>-goal</sub>"
 - api: API key for ChatGPT
 - demo: add this to use demonstrations
