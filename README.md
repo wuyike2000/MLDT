@@ -6,7 +6,7 @@ In the realm of data-driven AI technology, the application of open-source large 
 ![](./figs/1.png)
 This is the accompanying code & benchmarks for the paper "MLDT: Multi-Level Decomposition for Complex Long-Horizon Robotic Task Planning with Open-Source Large Language Model".
 
-UPDATE: the paper has been accepted by the International Conference on Database Systems for Advanced Applications (DASFAA-2024).
+The paper has been accepted by the International Conference on Database Systems for Advanced Applications (DASFAA-2024).
 
 ## Setup
 ### Environment Setup
