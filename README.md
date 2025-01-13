@@ -67,3 +67,29 @@ Go to ```MLDT/MLDT/task-planning/```. Run ```bash scripts/llm_eval.sh``` to eval
 - api: API key for ChatGPT
 - demo: add this to use demonstrations
 - max_retry: the number of times that task planning models can try, we set 1 in our experiment, you can set larger for higher sucess rate but longer inference time, it is useful for generating more training corpus
+
+## Contact
+Please consider creating a new issue. We will respond to your questions within a few days.
+
+## BibTex
+If you find this work is helpful for your research, please cite:
+```
+@inproceedings{DBLP:conf/dasfaa/WuZHTQSRS24,
+  author       = {Yike Wu and
+                  Jiatao Zhang and
+                  Nan Hu and
+                  Lanling Tang and
+                  Guilin Qi and
+                  Jun Shao and
+                  Jie Ren and
+                  Wei Song},
+  title        = {{MLDT:} Multi-Level Decomposition for Complex Long-Horizon Robotic
+                  Task Planning with Open-Source Large Language Model},
+  booktitle    = {{DASFAA} {(5)}},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {14854},
+  pages        = {251--267},
+  publisher    = {Springer},
+  year         = {2024}
+}
+```
